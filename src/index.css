@@ -11,6 +11,9 @@ body {
 	color: #ffffff;
 	font-family: var(--font-main);
 }
+.absolute {
+	position: absolute;
+}
 .align-content-center {
   	align-content: center;
 }
@@ -49,47 +52,35 @@ body {
 .flex-start {
   	align-items: flex-start;
 }
-.font-size-12 {
-  	font-size: 12px;
+.font-size-2xx {
+  	font-size: 2.5rem;
 }
-.font-size-14 {
-  	font-size: 14px;
+.font-size-3 {
+  	font-size: 3rem;
 }
-.font-size-16 {
-  	font-size: 16px;
+.font-size-3x {
+  	font-size: 3.2rem;
 }
-.font-size-18 {
-  	font-size: 18px;
+.font-size-3xx {
+  	font-size: 3.5rem;
 }
-.font-size-24 {
-  	font-size: 24px;
+.font-size-4 {
+  	font-size: 4rem;
 }
-.font-size-32 {
-  	font-size: 32px;
+.font-size-4xx {
+  	font-size: 4.5rem;
 }
-.font-size-42 {
-  	font-size: 42px;
+.font-size-5 {
+  	font-size: 5rem;
 }
-.font-size-52 {
-  	font-size: 52px;
+.font-size-6 {
+  	font-size: 6rem;
 }
-.font-size-58 {
-  	font-size: 58px;
+.font-size-15 {
+  	font-size: 15rem;
 }
-.font-size-64{
-  	font-size: 64px;
-}
-.font-size-70 {
-  	font-size: 70px;
-}
-.font-size-72 {
-  	font-size: 72px;
-}
-.font-size-82 {
-  	font-size: 82px;
-}
-.font-size-160 {
-  	font-size: 160px;
+.font-size-22 {
+  	font-size: 22rem;
 }
 .justify-content-center {
   	justify-content: center;
@@ -100,8 +91,14 @@ body {
 .light-text {
   	font-weight: 300;
 }
+.medium-text {
+	font-weight: 500;
+}
 .regular-text {
   	font-weight: 400;
+}
+.relative {
+	position: relative;
 }
 .semi-bold-text {
   	font-weight: 600;
