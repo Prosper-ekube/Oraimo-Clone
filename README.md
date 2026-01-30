@@ -1,73 +1,181 @@
-# React + TypeScript + Vite
+**Oraimo-Clone**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack e-commerce clone inspired by the Oraimo websites.
+The project uses React + TypeScript + Tailwind CSS for the frontend and Django (REST API) for the backend, focusing on clean architecture, scalability, and real-world development practices.
 
-Currently, two official plugins are available:
+This is a learning and portfolio project. It is not affiliated with Oraimo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+**Overview**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Oraimo-Clone replicates the UI/UX and basic workflows of an e-commerce platform while introducing a proper backend for data handling, authentication, and future expansion.
 
-## Expanding the ESLint configuration
+The project is designed to demonstrate:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Full-stack architecture (frontend + backend separation)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+RESTful API communication
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Scalable frontend component structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Clean backend organization with Django
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Modern styling using Tailwind CSS
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Features**
+
+*Frontend*
+
+Responsive UI inspired by Oraimo
+
+Reusable React components
+
+Client-side routing with React Router
+
+Tailwind CSS for consistent styling
+
+Scroll-to-top handling
+
+Clean Navbar and Footer architecture
+
+
+*Backend*
+
+Django-powered backend
+
+REST API for products and user-related data
+
+Structured models and views
+
+Ready for authentication, cart, and order logic
+
+
+**Tech Stack**
+
+*Frontend*
+
+React
+
+TypeScript
+
+Vite
+
+Tailwind CSS
+
+React Router
+
+
+*Backend*
+
+Django
+
+Django REST Framework
+
+SQLite
+TODO: Update Project Structure
+**Project Structure**
+oraimo-clone/
+├── frontend/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── routes/
+│   │   ├── utils/
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   ├── tailwind.config.js
+│   └── vite.config.ts
+│
+├── backend/
+│   ├── core/
+│   ├── products/
+│   ├── users/
+│   ├── manage.py
+│   └── requirements.txt
+│
+└── README.md
+
+
+**Installation & Setup**
+Clone the Repository
+git clone https://github.com/Prosper-ekube/Oraimo-Clone.git
+cd Oraimo-Clone
+
+**Frontend Setup**
+cd frontend
+npm install
+npm run dev
+
+Frontend runs on:
+http://localhost:5173
+
+
+**Backend Setup**
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+Backend runs on:
+http://localhost:8000
+
+
+**API Communication**
+
+Frontend consumes backend data via REST APIs
+
+API endpoints are exposed using Django REST Framework
+
+CORS configuration is required for local development
+
+
+**Available Scripts**
+
+*Frontend*
+Command	Description
+npm run dev	Start frontend dev server
+npm run build	Build frontend
+npm run preview	Preview production build
+
+*Backend*
+Command	Description
+python manage.py runserver	Start Django server
+python manage.py migrate	Apply migrations
+python manage.py createsuperuser	Create admin user
+
+
+**Development Notes**
+
+Frontend and backend are deliberately separated
+
+Styling is handled exclusively with Tailwind CSS
+
+Django is used as an API provider, not a template engine
+
+The project prioritizes clarity and maintainability, not shortcuts
+
+If someone complains this isn’t “fully finished,” they’re missing the point — this is a portfolio-grade foundation, not a Shopify clone.
+
+TODO: Add roadmap
+
+
+**Contributing**
+
+Fork the repository
+
+Create a feature branch
+
+Write clear conventional commits
+
+Open a pull request
+
+
+**License**
+
+This project is intended for educational and portfolio use only.
+
+All trademarks, brand names, and assets belong to Oraimo.
