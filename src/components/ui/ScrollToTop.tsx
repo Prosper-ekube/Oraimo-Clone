@@ -21,7 +21,7 @@ const ScrollToTop: React.FC = () => {
 
     return (
         <button aria-label='Scroll to top'
-            className='fixed bottom-8 cursor-pointer flex h-10 w-10 items-center justify-center opacity-80 rounded-3xl bg-[#1b1d1e] text-[#484b4b] right-8'
+            className='bg-[#1b1d1e] bottom-8 cursor-pointer fixed flex h-10 items-center justify-center opacity-80 right-8 rounded-3xl text-[#484b4b] w-10'
             onClick={scrollToTop}
         >
             <HiArrowUp className='h-5 w-5' />

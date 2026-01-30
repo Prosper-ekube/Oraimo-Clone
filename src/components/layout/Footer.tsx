@@ -3,7 +3,7 @@ import oraimoLogo from '../../assets/images/oraimo_icon.png'
 
 const Footer: React.FC = () => {
     return (
-        <footer className='bg-[#1b1d1e] mt-[200px] w-full'>
+        <footer className='bg-[#1b1d1e] w-full'>
             <div className='cursor-default flex flex-col gap-5 max-w-5xl md:gap-9 mx-auto px-2 py-5 md:py-8 text-[#484b4b] text-center'>
                 <div className='flex flex-col gap-3 items-center justify-center md:flex-row md:gap-1'>
                     <span className='font-bold text-base'>ORAIMO TECHNOLOGY LIMITED</span>
