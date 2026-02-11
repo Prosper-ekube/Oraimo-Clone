@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "../pages/home/Home"
+import Dashboard from "../pages/admin/Dashboard"
 import Product from "../pages/product/Product"
 import About from "../pages/about/About"
 import Shopping from "../pages/shopping/Shopping"
@@ -10,7 +10,7 @@ const AppRoutes: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="product/" element={<Product />} />
         <Route path="about/" element={<About />} />
         <Route path="shopping/" element={<Shopping />} />
